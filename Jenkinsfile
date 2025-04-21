@@ -17,7 +17,7 @@ pipeline {
 
         stage('Run Python Script') {
             steps {
-                bat 'pytest -s -v tests\\test_login_class.py::Test_Class_Login'
+                bat 'pytest -s -v tests\\test_login.py::test_02'
             }
         }
     }
